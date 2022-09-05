@@ -1,0 +1,70 @@
+h2 {
+    font-family: 'Avocado Cake', sans-serif;
+    font-size: 1.8rem;
+    padding-bottom: 2%;
+}
+
+p,
+input,
+a {
+    font-family: 'Please WMa Song', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+input {
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 4px;
+}
+
+button {
+    font-family: "Please WMa Song", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgb(121, 241, 121);
+    border: 0.5px solid lightgray;
+    cursor: pointer;
+    border-radius: 8px;
+    padding-top: 0.5%;
+    padding-left: 1.5%;
+    padding-bottom: 0.5%;
+    padding-right: 1.5%;
+    margin-bottom: 3%;
+}
+
+i {
+    padding-left: 0.5rem;
+    color: black;
+}
+
+a {
+    font-size: 1.5rem;
+    margin-right: 5%;
+}
+
+a:hover {
+    color: rgb(54, 54, 54);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.centro {
+    text-align: center;
+}
+
+.espaco {
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+}
+
+.user {
+    margin-right: 3%;
+}
+
+.alinhamento {
+    text-align: end;
+    margin-right: 30%;
+}

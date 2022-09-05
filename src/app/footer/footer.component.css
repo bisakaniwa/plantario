@@ -1,0 +1,86 @@
+.fundo {
+    background: rgb(131, 86, 35);
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+
+h3 {
+    padding-right: 8rem;
+    font-family: 'Avocado Cake', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: end;
+}
+
+nav {
+    font-family: 'Avocado Cake', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    border-right: 1.5px solid black;
+    margin-top: 5%;
+}
+
+p,
+a {
+    font-family: 'Please WMa Song', sans-serif;
+    font-size: 1.5rem;
+    padding-right: 8rem;
+    font-weight: bold;
+    width: 400px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: gray
+}
+
+
+
+.infos1 {
+    font-family: 'Avocado Cake', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: start;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 22%;
+    width: 85%;
+    margin-top: 1.5rem;
+}
+
+.infos2 {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-content: flex-end;
+    text-align: end;
+    align-items: center;
+}
+
+section {
+    text-align: start;
+}
+
+.semMargem {
+    margin: 0;
+    height: auto;
+}
+
+.rodape {
+    font-family: 'Please WMa Song', sans-serif;
+    font-size: 1.5rem;
+    text-align: end;
+    padding-right: 8rem;
+    font-weight: bold;
+}
+
+i {
+    padding-right: 5%;
+}

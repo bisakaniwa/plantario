@@ -1,0 +1,62 @@
+.centro {
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    align-content: center;
+}
+
+h2 {
+    font-family: 'Avocado Cake', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Please WMa Song', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 1000px;
+    margin-left: 9rem;
+    margin-top: 1%;   
+    margin-bottom: 5%; 
+}
+
+input, form {
+    font-family: 'Please WMa Song', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: end;
+    margin-right: 23%;
+}
+
+input {
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 4px;
+}
+
+p {
+    margin-top: -1.5%;
+}
+
+button {
+    font-family: "Please WMa Song", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgb(121, 241, 121);
+    border: 0.5px solid lightgray;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 1%;
+    margin-right: 15%;
+    padding-top: 0.5%;
+    padding-left: 1.5%;
+    padding-bottom: 0.5%;
+    padding-right: 1.5%;
+    margin-bottom: 3%;
+}
+
+i {
+    padding-left: 1rem;
+    color: black;
+}

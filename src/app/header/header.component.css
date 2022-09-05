@@ -1,0 +1,22 @@
+h1 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 5rem;
+}
+
+.main-header {    
+    display: flex;
+    margin-left: 5%;
+    align-items: center;
+    margin-top: -3%;    
+}
+
+button {
+    font-size: 4.5rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.arvore {
+    color: rgb(0, 66, 0)
+}

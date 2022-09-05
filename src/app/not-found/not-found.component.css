@@ -1,0 +1,29 @@
+h2 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: 'Please WMa Song', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    width: 500px;
+}
+
+.centro {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.imagem {
+    width: 80%;
+    height: 100%;
+}

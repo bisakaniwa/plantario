@@ -1,0 +1,27 @@
+h2 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 4rem;
+    padding-left: 6rem;
+    margin-top: -1rem;
+}
+
+p {
+    font-family: 'Please WMa Song', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+section {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 3rem;
+}
+
+.margem {
+    padding-left: 4rem;
+    padding-right: 3rem;
+}

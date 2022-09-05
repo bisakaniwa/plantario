@@ -1,0 +1,46 @@
+.navegacao {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Amatic SC', sans-serif;
+    display: flex;
+    align-items: center;
+    padding-left: 20%;
+}
+
+button {
+    font-family: 'Please WMa Song', sans-serif;
+    background-color: rgb(121, 241, 121);
+    border: 2px solid gray;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 1%;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+a {
+    color: darkgreen;
+    text-decoration: none;
+    padding-right: 3rem;;
+}
+
+a:hover {
+    color: darkslategray;
+    cursor: pointer;
+}
+
+
+input {
+    font-size: 1.5rem;
+    margin-top: 0.4%;
+    font-family: 'Please WMa Song', sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+    align-content: center;
+}
+
+.icones {
+    padding-right: 1rem;
+    color: green;
+}
+
