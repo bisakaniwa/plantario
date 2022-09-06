@@ -22,3 +22,8 @@ article {
 p, ul {
     padding-left: 5%;
 }
+
+p {
+    padding-right: 7%;
+    font-weight: bold;
+}
