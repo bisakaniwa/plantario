@@ -13,6 +13,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { EsqueciSenhaComponent } from './esqueci-senha/esqueci-senha.component';
 import { ConteudoComponent } from './conteudo/conteudo.component';
+import { SignInModule } from './sign-in/sign-in.module';
+import { ReactiveFormsModule } from '@angular/forms'
+import { MatSnackBarModule } from '@angular/material/snack-bar'
 
 @NgModule({
   declarations: [
@@ -32,6 +35,8 @@ import { ConteudoComponent } from './conteudo/conteudo.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
+    SignInModule
   ],
   providers: [],
   bootstrap: [AppComponent]

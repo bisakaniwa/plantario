@@ -3,25 +3,95 @@
     <h3> Oi! Pra se cadastrar é bem simples: vamos pedir alguns dados apenas para uma melhor identificação da sua conta,
         não vamos compartilhar com ninguém, nem te mandar vários e-mails. Vamos lá? </h3>
 
-    <form>
+    <form [formGroup]="cadastroValidacao">
         <p>Primeiro nome:
-            <input type="text" placeholder="Digite seu nome">
-        </p>
+            <input type="text" placeholder="Digite seu nome" formControlName="nome1" 
+            [class.valid]="cadastroValidacao.controls['nome1'].valid"
+            [class.invalid]="cadastroValidacao.controls['nome1'].invalid && 
+            (cadastroValidacao.controls['nome1'].touched || cadastroValidacao.controls['nome1'].dirty)">
+
+            <div
+                *ngIf="cadastroValidacao.controls['nome1'].invalid && 
+                (cadastroValidacao.controls['nome1'].touched || cadastroValidacao.controls['nome1'].dirty)">
+                <small *ngIf="cadastroValidacao.controls['nome1'].hasError('required')"> Campo obrigatório. </small>
+            </div>
+
         <p>Sobrenome:
-            <input type="text" placeholder="Digite seu sobrenome">
-        </p>
+            <input type="text" placeholder="Digite seu sobrenome" formControlName="sobrenome"
+            [class.valid]="cadastroValidacao.controls['sobrenome'].valid"
+            [class.invalid]="cadastroValidacao.controls['sobrenome'].invalid && 
+            (cadastroValidacao.controls['sobrenome'].touched || cadastroValidacao.controls['sobrenome'].dirty)">
+
+            <div
+                *ngIf="cadastroValidacao.controls['sobrenome'].invalid && 
+                (cadastroValidacao.controls['sobrenome'].touched || cadastroValidacao.controls['sobrenome'].dirty)">
+                <small *ngIf="cadastroValidacao.controls['sobrenome'].hasError('required')"> Campo obrigatório. </small>
+            </div>
+
         <p>Seu melhor e-mail:
-            <input type="email" placeholder="Digite seu e-mail">
-        </p>
+            <input type="email" placeholder="Digite seu e-mail" formControlName="email"
+            [class.valid]="cadastroValidacao.controls['email'].valid"
+            [class.invalid]="cadastroValidacao.controls['email'].invalid && 
+            (cadastroValidacao.controls['email'].touched || cadastroValidacao.controls['email'].dirty)">
+
+            <div
+                *ngIf="cadastroValidacao.controls['email'].invalid && 
+                (cadastroValidacao.controls['email'].touched || cadastroValidacao.controls['email'].dirty)">
+                <small *ngIf="cadastroValidacao.controls['email'].hasError('required')"> Campo obrigatório. </small>
+            </div>
+            <div
+                *ngIf="cadastroValidacao.controls['email'].invalid && 
+                (cadastroValidacao.controls['email'].touched || cadastroValidacao.controls['email'].dirty)">
+                <small *ngIf="(cadastroValidacao.controls['email'].touched &&
+                cadastroValidacao.controls['email'].hasError('email'))"> E-mail inválido. </small>
+            </div>
+
         <p>Escolha um username:
-            <input type="text" placeholder="Digite um username">
-        </p>
+            <input type="text" placeholder="Digite um username" formControlName="username"
+            [class.valid]="cadastroValidacao.controls['username'].valid"
+            [class.invalid]="cadastroValidacao.controls['username'].invalid && 
+            (cadastroValidacao.controls['username'].touched || cadastroValidacao.controls['username'].dirty)">
+
+            <div
+                *ngIf="cadastroValidacao.controls['username'].invalid && 
+                (cadastroValidacao.controls['username'].touched || cadastroValidacao.controls['username'].dirty)">
+                <small *ngIf="cadastroValidacao.controls['username'].hasError('required')"> Campo obrigatório. </small>
+            </div>
+            <div
+                *ngIf="cadastroValidacao.controls['username'].invalid && 
+                (cadastroValidacao.controls['username'].touched || cadastroValidacao.controls['username'].dirty)">
+                <small *ngIf="cadastroValidacao.controls['username'].hasError('')"> Username indisponível. </small>
+            </div>
+        
         <p>Senha:
-            <input type="password" placeholder="Digite uma senha">
-        </p>
+            <input type="password" placeholder="Digite uma senha" formControlName="senha"
+            [class.valid]="cadastroValidacao.controls['senha'].valid"
+            [class.invalid]="cadastroValidacao.controls['senha'].invalid && 
+            (cadastroValidacao.controls['senha'].touched || cadastroValidacao.controls['senha'].dirty)">
+
+            <div
+                *ngIf="cadastroValidacao.controls['senha'].invalid && 
+                (cadastroValidacao.controls['senha'].touched || cadastroValidacao.controls['senha'].dirty)">
+                <small *ngIf="cadastroValidacao.controls['senha'].hasError('required')"> Campo obrigatório. </small>
+            </div>
+        
         <p>Digite a senha novamente:
-            <input type="password" placeholder="Confirme sua senha">
-        </p>
+            <input type="password" placeholder="Confirme sua senha" formControlName="confirmSenha"
+            [class.valid]="cadastroValidacao.controls['confirmSenha'].valid"
+            [class.invalid]="cadastroValidacao.controls['confirmSenha'].invalid && 
+            (cadastroValidacao.controls['confirmSenha'].touched || cadastroValidacao.controls['confirmSenha'].dirty)">
+
+            <div
+                *ngIf="cadastroValidacao.controls['confirmSenha'].invalid && 
+                (cadastroValidacao.controls['confirmSenha'].touched || cadastroValidacao.controls['confirmSenha'].dirty)">
+                <small *ngIf="cadastroValidacao.controls['confirmSenha'].hasError('required')"> Campo obrigatório. </small>
+            </div>
+            <div
+                *ngIf="cadastroValidacao.controls['confirmSenha'].invalid && 
+                (cadastroValidacao.controls['confirmSenha'].touched || cadastroValidacao.controls['confirmSenha'].dirty)">
+                <small *ngIf="cadastroValidacao.controls['confirmSenha'].hasError('MustMatch')"> Senhas diferentes. </small>
+            </div>
+        
         <button type="submit">É isso!<i class="fa-solid fa-square-check"></i></button>
     </form>
 </div>
