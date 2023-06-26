@@ -22,3 +22,10 @@
     font-family: Please WMa Song;
     src: url(./assets/Please-write-me-a-song.ttf);
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+}

@@ -15,7 +15,7 @@ h3 {
     font-family: 'Please WMa Song', sans-serif;
     font-size: 2rem;
     font-weight: bold;
-    width: 1000px;
+    width: 80%;
     margin-left: 9rem;
     margin-top: 1%;   
     margin-bottom: 5%; 
@@ -33,10 +33,8 @@ input {
     text-align: center;
     border: 2px solid gray;
     border-radius: 4px;
-}
-
-p {
-    margin-top: -1.5%;
+    width: 50%;
+    margin-left: 2%;
 }
 
 button {
@@ -48,11 +46,7 @@ button {
     cursor: pointer;
     border-radius: 8px;
     margin-top: 1%;
-    margin-right: 15%;
-    padding-top: 0.5%;
-    padding-left: 1.5%;
-    padding-bottom: 0.5%;
-    padding-right: 1.5%;
+    padding: 0.5% 1.5% 0.5% 1.5%;
     margin-bottom: 3%;
 }
 
@@ -63,12 +57,28 @@ i {
 
 .ng-valid:not(form).ng-touched {
     border: 1px solid green;
+    background: rgba(0, 128, 0, 0.247);
 }
 
 .ng-invalid:not(form).ng-touched.ng-dirty {
     border: 1px solid red;
+    background: rgba(255, 0, 0, 0.267);
 }
 
-.ng-pending.ng-touched {
-    border-color: yellow;
+.form {
+    display: grid;
+    grid-template-columns: 50% 90%;
+}
+
+small {
+    font-size: 1.3rem;
+    color: red;
+}
+
+.validacao {
+    margin: -2% 3% 1% 0;
+}
+
+article {
+    margin-bottom: 1%;
 }

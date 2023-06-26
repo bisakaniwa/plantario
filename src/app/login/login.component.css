@@ -4,7 +4,7 @@ h2 {
     padding-bottom: 2%;
 }
 
-p,
+article,
 input,
 a {
     font-family: 'Please WMa Song', sans-serif;
@@ -18,6 +18,10 @@ input {
     text-align: center;
     border: 2px solid gray;
     border-radius: 4px;
+}
+
+article {
+    margin-bottom: 1%;
 }
 
 button {
@@ -67,4 +71,5 @@ a:hover {
 .alinhamento {
     text-align: end;
     margin-right: 30%;
+    margin-bottom: 2%;
 }

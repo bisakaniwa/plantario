@@ -1,0 +1,107 @@
+<div class="centro">
+    <h2> Cadastre-se! </h2>
+    <h3> Oi! Pra se cadastrar é bem simples: vamos pedir alguns dados apenas para uma melhor identificação da sua conta,
+        não vamos compartilhar com ninguém, nem te mandar vários e-mails. Vamos lá? </h3>
+
+    <form (ngSubmit)="novoCadastro(usuario)" [formGroup]="novoUsuario">
+
+        <article class="form">
+            <label> Primeiro nome: </label>
+            <input type="text" placeholder="Digite seu nome" formControlName="primeiroNome"
+                [class.valid]="novoUsuario.controls['primeiroNome'].valid" [class.invalid]="novoUsuario.controls['primeiroNome'].invalid && 
+            (novoUsuario.controls['primeiroNome'].touched || novoUsuario.controls['primeiroNome'].dirty)">
+        </article> 
+
+        <div class="validacao" *ngIf="novoUsuario.controls['primeiroNome'].invalid && 
+                (novoUsuario.controls['primeiroNome'].touched || novoUsuario.controls['primeiroNome'].dirty)">
+            <small *ngIf="novoUsuario.controls['primeiroNome'].hasError('required')"> Campo obrigatório. </small>
+        </div>
+
+        <article class="form">
+            <label> Sobrenome: </label>
+            <input type="text" placeholder="Digite seu sobrenome" formControlName="sobrenome"
+                [class.valid]="novoUsuario.controls['sobrenome'].valid" [class.invalid]="novoUsuario.controls['sobrenome'].invalid && 
+            (novoUsuario.controls['sobrenome'].touched || novoUsuario.controls['sobrenome'].dirty)">
+        </article>
+
+        <div class="validacao" *ngIf="novoUsuario.controls['sobrenome'].invalid && 
+                (novoUsuario.controls['sobrenome'].touched || novoUsuario.controls['sobrenome'].dirty)">
+            <small *ngIf="novoUsuario.controls['sobrenome'].hasError('required')"> Campo obrigatório. </small>
+        </div>
+
+        <article class="form">
+            <label> Seu melhor e-mail: </label>
+            <input type="email" placeholder="Digite seu e-mail" formControlName="email"
+                [class.valid]="novoUsuario.controls['email'].valid" [class.invalid]="novoUsuario.controls['email'].invalid && 
+            (novoUsuario.controls['email'].touched || novoUsuario.controls['email'].dirty)">
+        </article>
+
+        <div class="validacao" *ngIf="novoUsuario.controls['email'].invalid && 
+                (novoUsuario.controls['email'].touched || novoUsuario.controls['email'].dirty)">
+            <small *ngIf="novoUsuario.controls['email'].hasError('required')" class="obrigatorio"> Campo obrigatório.
+            </small>
+        </div>
+
+        <div class="validacao" *ngIf="novoUsuario.controls['email'].invalid && 
+                (novoUsuario.controls['email'].touched || novoUsuario.controls['email'].dirty)">
+            <small *ngIf="(novoUsuario.controls['email'].touched &&
+                novoUsuario.controls['email'].hasError('email'))"> E-mail inválido. </small>
+        </div>
+
+        <article class="form">
+            <label> Escolha um username: </label>
+            <input type="text" placeholder="Digite um username" formControlName="username"
+                [class.valid]="novoUsuario.controls['username'].valid" [class.invalid]="novoUsuario.controls['username'].invalid && 
+            (novoUsuario.controls['username'].touched || novoUsuario.controls['username'].dirty)">
+        </article>
+
+        <div class="validacao" *ngIf="novoUsuario.controls['username'].invalid && 
+                (novoUsuario.controls['username'].touched || novoUsuario.controls['username'].dirty)">
+            <small *ngIf="novoUsuario.controls['username'].hasError('required')"> Campo obrigatório.
+            </small>
+        </div>
+
+        <div class="validacao" *ngIf="novoUsuario.controls['username'].invalid && 
+                (novoUsuario.controls['username'].touched || novoUsuario.controls['username'].dirty)">
+            <small *ngIf="novoUsuario.controls['username'].hasError('')"> Username indisponível. </small>
+        </div>
+
+        <article class="form">
+            <label> Senha: </label>
+            <input type="password" placeholder="Digite uma senha" formControlName="senha"
+                [class.valid]="novoUsuario.controls['senha'].valid" [class.invalid]="novoUsuario.controls['senha'].invalid && 
+            (novoUsuario.controls['senha'].touched || novoUsuario.controls['senha'].dirty)">
+        </article>
+
+        <div class="validacao" *ngIf="novoUsuario.controls['senha'].invalid && 
+                (novoUsuario.controls['senha'].touched || novoUsuario.controls['senha'].dirty)">
+            <small *ngIf="novoUsuario.controls['senha'].hasError('required')"> Campo obrigatório.
+            </small>
+        </div>
+
+        <article class="form">
+            <label> Digite a senha novamente: </label>
+            <input type="password" placeholder="Confirme sua senha" formControlName="confirmSenha"
+                [class.valid]="novoUsuario.controls['confirmSenha'].valid" [class.invalid]="novoUsuario.controls['confirmSenha'].invalid && 
+            (novoUsuario.controls['confirmSenha'].touched || novoUsuario.controls['confirmSenha'].dirty)">
+        </article>
+
+        <div class="validacao" *ngIf="novoUsuario.controls['confirmSenha'].invalid && 
+                (novoUsuario.controls['confirmSenha'].touched || novoUsuario.controls['confirmSenha'].dirty)">
+            <small *ngIf="novoUsuario.controls['confirmSenha'].hasError('required')"> Campo
+                obrigatório. </small>
+        </div>
+
+        <div class="validacao" *ngIf="novoUsuario.controls['confirmSenha'].invalid && 
+                (novoUsuario.controls['confirmSenha'].touched || novoUsuario.controls['confirmSenha'].dirty)">
+            <small *ngIf="novoUsuario.controls['confirmSenha'].hasError('MustMatch')"> Senhas
+                diferentes. </small>
+        </div>
+
+    </form>
+
+    <div class="button">
+        <button type="submit" routerLink="feed"> É isso! <i class="fa-solid fa-square-check"></i> </button>
+    </div>
+
+</div>
